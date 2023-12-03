@@ -249,13 +249,13 @@
 		<center><h1>Motivation</h1></center>
 		<tr>
 			<td>
-				<h3>Capturing underlying temporal and higher-order structure:</h3>
-				<p align="justify">  </p>
+				<h3>Capturing underlying temporal and higher-order structure</h3>
+				<p align="justify"> Many recent attempts to design representation learning methods for hypergraphs are equivalent to applying Graph Neural Networks (GNNs) to the clique-expansion (CE) of a hypergraph. CE is a straightforward way to generalize graph algorithms to hypergraphs by replacing hyperedges with (weighted) cliques. However, we prove that this decomposition of hyperedges limits expressiveness, leading to suboptimal performance. New methods that encode hypergraphs directly partially address this issue but these methods suffer from some combination of the following three limitations: they are designed for (1) learning the structural properties of static hypergraphs and do not consider temporal properties, (2) the transductive setting, limiting their performance on unseen patterns and data, and (3) a specific downstream task (e.g., node classification, hyperedge prediction, or subgraph classification) and cannot easily be extended to other downstream tasks, limiting their application.  </p>
 				<br>
-				<h3>SetWalks:</h3>
-				<p align="justify"> One possible solution to capturing underlying temporal and higher-order structure is to extend the concept of a hypergraph random walk to its temporal counterpart by letting the walker walk over time. However, existing definitions of random walks on hypergraphs offer limited expressivity and sometimes degenerate to simple walks on the CE of the hypergraph. There are two reasons for this: (1) Random walks are composed of a sequence of pair-wise interconnected vertices, even though edges in a hypergraph connect \emph{sets} of vertices. Decomposing them into sequences of simple pair-wise interactions loses the semantic meaning of the hyperedges. (2) A sampling probability of a walk on a hypergraph must be different from its sampling probability on the CE of the hypergraph.  </p>
+				<h3>SetWalks</h3>
+				<p align="justify"> One possible solution to capturing underlying temporal and higher-order structure is to extend the concept of a hypergraph random walk to its temporal counterpart by letting the walker walk over time. However, existing definitions of random walks on hypergraphs offer limited expressivity and sometimes degenerate to simple walks on the CE of the hypergraph. There are two reasons for this: (1) Random walks are composed of a sequence of pair-wise interconnected vertices, even though edges in a hypergraph connect sets of vertices. Decomposing them into sequences of simple pair-wise interactions loses the semantic meaning of the hyperedges. (2) A sampling probability of a walk on a hypergraph must be different from its sampling probability on the CE of the hypergraph.  </p>
 				<br>
-				<h3>SetMixer:</h3>
+				<h3>SetMixer</h3>
 				<p align="justify">  </p>
 			</td>
 		</tr>
