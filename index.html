@@ -226,24 +226,6 @@
 <!-- 	</p> -->
 	<hr>
 	
-	<table align=center width=850px>
-		<center><h1>Motivation</h1></center>
-		<tr>
-			<td>
-				<h3>Capturing underlying temporal and higher-order structure</h3>
-				<p align="justify"> Many recent attempts to design representation learning methods for hypergraphs are equivalent to applying Graph Neural Networks (GNNs) to the clique-expansion (CE) of a hypergraph. CE is a straightforward way to generalize graph algorithms to hypergraphs by replacing hyperedges with (weighted) cliques. However, we prove that this decomposition of hyperedges limits expressiveness, leading to suboptimal performance. New methods that encode hypergraphs directly partially address this issue but these methods suffer from some combination of the following three limitations: they are designed for (1) learning the structural properties of static hypergraphs and do not consider temporal properties, (2) the transductive setting, limiting their performance on unseen patterns and data, and (3) a specific downstream task (e.g., node classification, hyperedge prediction, or subgraph classification) and cannot easily be extended to other downstream tasks, limiting their application. To address these challenges, we propose a higher-order temporal walk, called SetWalk, to capture both higher-order and temporal properties, and then design a provably powerful permutation invariant pooling method to learn the hyperedge representations. </p>
-				<br>
-				<h3>SetWalks</h3>
-				<p align="justify"> One possible solution to capturing underlying temporal and higher-order structure is to extend the concept of a hypergraph random walk to its temporal counterpart by letting the walker walk over time. However, existing definitions of random walks on hypergraphs offer limited expressivity and sometimes degenerate to simple walks on the CE of the hypergraph. There are two reasons for this: (1) Random walks are composed of a sequence of pair-wise interconnected vertices, even though edges in a hypergraph connect sets of vertices. Decomposing them into sequences of simple pair-wise interactions loses the semantic meaning of the hyperedges. (2) A sampling probability of a walk on a hypergraph must be different from its sampling probability on the CE of the hypergraph. To this end, we present a new temporal higher-order walks, called SetWalk, where each random walk is a sequence of hyperedges (i.e., in each step of walk sampling, we sample an adjacent hyperedge). </p>
-				<br>
-				<h3>SetMixer</h3>
-				<p align="justify">  </p>
-			</td>
-		</tr>
-	</table>
-	<br>
-	
-	<hr>
 
 	<table align=center width=850px>
 		<center><h1>Method</h1></center>
@@ -318,20 +300,11 @@
 	<br>
 	
 	<hr>
-	
-
-	<table align=center width=800px>
-		<br>
-		<tr><center>
-			<span style="font-size:28px">&nbsp;<a href='https://github.com/ubc-systopia/CATWalk'>Code, Data, and Trained Models</a>
-			</center>
-		</span>
-	</table>
 	<table align=center width=400px>
 		<tr>
 			<td align=center width=400px>
 				<center>
-					<a href="https://github.com/ubc-systopia/CATWalk">
+					<a href="https://github.com/MambaMixer/M2">
 				        <img class="round" style="width:300px" src="./resources/Github.png"/>
 				    	</a>
 				</center>
@@ -344,10 +317,9 @@
 		<center><h1>Paper and Supplementary Material</h1></center>
 		<tr>
 			<td><a href=""><img class="layered-paper-big" style="height:175px" src="./resources/paper.png"/></a></td>
-			<td><span style="font-size:14pt">A. Behrouz, F. Hashemi, S. Sadeghian, M. Seltzer.<br>
-				<b>CAT-Walk: Inductive Hypergraph Learning via Set Walks.</b><br>
-				In Thirty-seventh Conference on Neural Information Processing Systems, NeurIPS 2023.<br>
-				(<a href="https://openreview.net/forum?id=QG4nJBNEar">Openreview</a>)<br>
+			<td><span style="font-size:14pt">A. Behrouz, M. Santacatterina, R. Zabih.<br>
+				<b>MambaMixer: Efficient Selective State Space Models with Dual Token and Channel Selection.</b><br>
+				arXiv.<br>
 				<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
 <!-- 				<span style="font-size:4pt"><a href=""><br></a> -->
 <!-- 				</span> -->
