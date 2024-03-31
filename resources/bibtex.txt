@@ -1,7 +1,6 @@
 @inproceedings{catwalk,
-  title={{CAT}-Walk: Inductive Hypergraph Learning via Set Walks},
-  author={Ali Behrouz and Farnoosh Hashemi and Sadaf Sadeghian and Margo Seltzer},
-  booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
-  year={2023},
-  url={https://openreview.net/forum?id=QG4nJBNEar}
+  title={MambaMixer: Efficient Selective State Space Models with Dual Token and Channel Selection,
+  author={Ali Behrouz and  Michele Santacatterina  and Ramin Zabih},
+  booktitle={ArXiv.},
+  year={2024},
 }
