@@ -118,7 +118,7 @@
 
 <html>
 <head>
-	<title>CATWalk</title>
+	<title>MambaMixer</title>
 	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
 	<meta property="og:title" content="Creative and Descriptive Paper Title." />
 	<meta property="og:description" content="Paper description." />
@@ -138,7 +138,7 @@
 <body>
 	<br>
 	<center>
-		<span style="font-size:36px">CAT-Walk: Inductive Hypergraph Learning via Set Walks</span>
+		<span style="font-size:36px">MambaMixer: Efficient Selective State Space Models with Dual Token and Channel Selection</span>
 		<br>
 		<br>
 		<table align=center width=1200px>
@@ -151,17 +151,12 @@
 					</td>
 					<td align=center width=300px>
 						<center>
-							<span style="font-size:24px"><a href="https://farnooshha.github.io/">Farnoosh Hashemi*</a></span>
+							<span style="font-size:24px"><a href="https://farnooshha.github.io/">Michele Santacatterina</a></span>
 						</center>
 					</td>
 					<td align=center width=300px>
 						<center>
-							<span style="font-size:24px"><a href="https://www.linkedin.com/in/sadaf-sadeghian-53b8b4174/">Sadaf Sadeghian*</a></span>
-						</center>
-					</td>
-					<td align=center width=300px>
-						<center>
-							<span style="font-size:24px"><a href="https://www.seltzer.com/margo/">Margo Seltzer</a></span>
+							<span style="font-size:24px"><a href="https://www.linkedin.com/in/sadaf-sadeghian-53b8b4174/">Ramin Zabih</a></span>
 						</center>
 					</td>
 				</tr>
@@ -171,12 +166,12 @@
 				<tr>
 					<td align=center width=120px>
 						<center>
-							<span style="font-size:24px"><a href='https://openreview.net/pdf?id=QG4nJBNEar'>[Paper]</a></span>
+							<span style="font-size:24px"><a href=''>[Paper]</a></span>
 						</center>
 					</td>
 					<td align=center width=120px>
 						<center>
-							<span style="font-size:24px"><a href='https://github.com/ubc-systopia/CATWalk'>[Code]</a></span>
+							<span style="font-size:24px"><a href='https://github.com/MambaMixer/M2'>[Code]</a></span>
 						</center>
 					</td>
 					<td align=center width=120px>
@@ -184,23 +179,9 @@
 							<span style="font-size:24px"><a href='./resources/bibtex.txt'>[Bibtex]</a></span>
 						</center>
 					</td>
-					<td align=center width=120px>
-						<center>
-							<span style="font-size:24px"><a href='./resources/Slides.pdf'>[Slides]</a></span><br>
-						</center>
-					</td>
 				</tr>
 			</table>
 			<br>
-			<table align=center width=490px>
-				<tr>
-					<td align=center width=120px>
-						<center>
-							<span style="font-size:24px">NeurIPS 2023</span>
-						</center>
-					</td>
-				</tr>
-			</table>
 		</table>
 	</center>
 	<br>
@@ -230,7 +211,7 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-				<p align="justify">Temporal hypergraphs provide a powerful paradigm for modeling time-dependent, higher-order interactions in complex systems. Representation learning for hypergraphs is essential for extracting patterns of the higher-order interactions that are critically important in real-world problems in social network analysis, neuroscience, finance, etc. However, existing methods are typically designed only for specific tasks or static hypergraphs. We present CAT-Walk, an inductive method that learns the underlying dynamic laws that govern the temporal and structural processes underlying a temporal hypergraph. CAT-Walk introduces a temporal, higher-order walk on hypergraphs, SetWalk, that extracts higher-order causal patterns. CAT-Walk uses a novel adaptive and permutation invariant pooling strategy, SetMixer, along with a set-based anonymization process that hides the identity of hyperedges. Finally, we present a simple yet effective neural network model to encode hyperedges. Our evaluation on 10 hypergraph benchmark datasets shows that CAT-Walk attains outstanding performance on temporal hyperedge prediction benchmarks in both inductive and transductive settings. It also shows competitive performance with state-of-the-art methods for node classification.</p> 
+				<p align="justify">Recent advances in deep learning have mainly relied on Transformers due to their data dependency and ability to learn at scale. The attention module in these architectures, however, exhibit quadratic time and space in input size, limiting their scalability for long-sequence modeling. Despite recent attempts to design efficient and effective architecture backbone for multi-dimensional data, such as images and multivariate time series, existing models are either data independent, or fail to allow inter- and intra-dimension communication. Recently, State Space Models (SSMs), and more specifically Selective State Space Models (S6), with efficient hardware-aware implementation, have shown promising potential for long sequence modeling. Motivated by the recent success of SSMs, we present MambaMixer block, a new architecture with data dependent weights that uses a dual selection mechanism across tokens and channels–called Selective Token and Channel Mixer. MambaMixer further connects the sequential selective mixers using a weighted averaging mechanism, allowing layers to have direct access to different layers' input and output. As a proof of concept, we design Vision MambaMixer (ViM2) and Time Series MambaMixer (TSM2) architectures based on MambaMixer block and explore their performance in various vision and time series forecasting tasks. Our results underline the importance of selectively mixing across both tokens and channels. In ImageNet classification, object detection, and semantic segmentation tasks, ViM2 achieves competitive performance with well-established vision models, i.e., ViT, MLP-Mixer, ConvMixer, and outperforms SSM-based vision models, i.e., ViM and VMamba. In time series forecasting, TSM2, an attention and MLP-free architecture, achieves outstanding performance compared to state-of-the-art methods while demonstrating significantly improved computational cost. These results show that while Transformers, cross-channel attention, and cross-channel MLPs are sufficient for good performance in practice, neither is necessary.</p> 
 			</td>
 		</tr>
 	</table>
