@@ -1,4 +1,4 @@
-@article{catwalk,
+@article{MambaMixer2024,
   title={MambaMixer: Efficient Selective State Space Models with Dual Token and Channel Selection}, 
   author={Ali Behrouz and  Michele Santacatterina  and Ramin Zabih},
   year={2024},  
