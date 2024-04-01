@@ -1,6 +1,6 @@
-@inproceedings{catwalk,
-  title={MambaMixer: Efficient Selective State Space Models with Dual Token and Channel Selection,
+@article{catwalk,
+  title={MambaMixer: Efficient Selective State Space Models with Dual Token and Channel Selection}, 
   author={Ali Behrouz and  Michele Santacatterina  and Ramin Zabih},
-  booktitle={ArXiv.},
-  year={2024},
+  year={2024},  
+  journal={arXiv preprint arXiv:2402.00789}
 }
